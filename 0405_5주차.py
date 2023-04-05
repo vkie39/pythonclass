@@ -186,3 +186,22 @@ print(random.randint(0, 10))
 from random import randint
 print(randint(0,100000))
 
+#놀이동산 놀이기구 탑승 문제
+#총 정원 4명
+#정원이 차면, 놀이기구 시작
+#정원이 키 150 이상만 탈 수 있음
+#사람들한테 키 물어보고 탑승시키시오.
+#150이상 4명이 되면 놀이기구 시작
+
+print("놀이동산 놀이기구 탑승 ")
+people=0
+150
+while people < 4 :
+    ki = input("키가 몇이에요? ")
+    if 150 <= int(ki):
+        print("탑승 가능합니다. ")
+        people+=1
+    else:
+        print("키를 더 키우세요")
+else:
+    print('정원 마감, 놀이기구 시작')
