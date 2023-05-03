@@ -135,3 +135,20 @@ def positive2(x):
 
 #밑의 내용은 똑같음.
 print(list(filter(lambda x:x>0, [-3, 2, 10, -6, -22, 11])))
+
+def is_even(x):
+    if x % 2 == 0:
+        return True
+    return False
+
+#for반복문 이용
+arr1 = []
+for val in range(1, 11): #1~10까지
+    if is_even(val):
+        arr1.append(val)
+ 
+print(f"arr function: {arr1}")
+
+#filter 함수 이용
+arr2 = list(filter(is_even, range(1, 11)))
+print(f'arr filter:{arr2}')
